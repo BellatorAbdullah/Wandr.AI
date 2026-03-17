@@ -30,6 +30,7 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   text-align: center;
   animation: fadeIn .6s ease;
+  backdrop-filter: blur(6px); /* subtle glass effect */
 }
 
 @keyframes fadeIn {
@@ -172,3 +173,5 @@ body {
 }
 
 #restartBtn:hover { background: #4f46e5; }
+
+/* Test UI */
