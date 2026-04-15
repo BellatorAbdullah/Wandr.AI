@@ -114,11 +114,11 @@ export default function App() {
     setItinerary(null);
 
     try {
-      const res = await fetch("https://wandr-ai-bk1k.onrender.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ answers: answers }),
-      });
+      const res = await fetch("https://wandr-ai-bk1k.onrender.com/api/generate-itinerary", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ answers: answers }),
+    });
 
       if (!res.ok) throw new Error("Could not connect to the backend server.");
 
