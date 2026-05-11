@@ -16,7 +16,7 @@ app.post('/api/generate-itinerary', async (req, res) => {
         const { answers } = req.body;
         
         // THE FIX: Using the rock-solid "gemini-pro" model
-       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
         
         const prompt = `Plan a detailed "Buddymoon" trip based on these details: ${JSON.stringify(answers)}.
 
