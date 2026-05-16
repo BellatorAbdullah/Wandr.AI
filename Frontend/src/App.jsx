@@ -101,7 +101,7 @@ export default function App() {
     setError(null);
     setItinerary(null);
     try {
-      const res = await fetch("http://localhost:8080/api/generate-itinerary", {
+      const res = await fetch("https://wandr-ai-1388.onrender.com/api/generate-itinerary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ answers: answers }),
