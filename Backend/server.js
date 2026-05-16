@@ -52,20 +52,20 @@ ${JSON.stringify(answers, null, 2)}
 1. Always use REAL, specific restaurant names (e.g. "Violet Oon Singapore" not "a local restaurant").
 2. Always use REAL, specific attraction names and their actual neighbourhoods.
 3. Food recommendations must name the ACTUAL restaurant and a specific dish they serve.
-4. Be specific and exciting — this is someone's real trip.
-
-### STRICT RULES:
-1. Always use REAL, specific restaurant names (e.g. "Violet Oon Singapore" not "a local restaurant").
-2. Always use REAL, specific attraction names and their actual neighbourhoods.
-3. Food recommendations must name the ACTUAL restaurant and a specific dish they serve.
-4. Always recommend a REAL hotel to stay at that matches the user's budget and accommodation preference — include it on Day 1 as the check-in activity with the actual hotel name and area.
+4. Always recommend a REAL hotel on Day 1 as the check-in activity with the actual hotel name and area.
 5. Be specific and exciting — this is someone's real trip.
+6. Write out EVERY single day fully — never summarise multiple days together, never skip a day.
 
-Examples of correct image placeholders:
-[PHOTO: Batu Caves Kuala Lumpur]
-[PHOTO: Jalan Alor Street Food]
-[PHOTO: Petronas Twin Towers night]
-[PHOTO: Bukit Bintang shopping]
+### STRICT FORMATTING RULES:
+1. Start with a Markdown table with columns: Destination | Duration | Vibe | Budget Range
+2. For EVERY single day write ### Day X: Title followed by a markdown table with EXACTLY these columns: | Time | Activity | Location | Vibe |
+3. After each day's table add a blockquote (>) with the real restaurant name and specific dish.
+4. After each food tip add an image placeholder: [PHOTO: main attraction for that day]
+
+Example placeholders:
+[PHOTO: Shibuya Crossing Tokyo night]
+[PHOTO: Senso-ji Temple Asakusa]
+[PHOTO: TeamLab Borderless Tokyo]
 `;
 
     const completion = await groq.chat.completions.create({
