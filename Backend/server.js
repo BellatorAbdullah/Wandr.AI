@@ -55,6 +55,7 @@ ${JSON.stringify(answers, null, 2)}
 4. Always recommend a REAL hotel on Day 1 as the check-in activity with the actual hotel name and area.
 5. Be specific and exciting — this is someone's real trip.
 6. Write out EVERY single day fully — never summarise multiple days together, never skip a day.
+7. In the Location column of every table, always write the full address format: "Place Name, District, City" (e.g. "Senso-ji Temple, Asakusa, Tokyo" or "Jalan Alor, Bukit Bintang, Kuala Lumpur")
 
 ### STRICT FORMATTING RULES:
 1. Start with a Markdown table with columns: Destination | Duration | Vibe | Budget Range
